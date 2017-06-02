@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="AerolineaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.aerolinea.entities.Ruta</class>
+    <class>com.aerolinea.entities.Vuelo</class>
+    <class>com.aerolinea.entities.Autorizacion</class>
+    <class>com.aerolinea.entities.Avion</class>
+    <class>com.aerolinea.entities.Usuario</class>
+    <class>com.aerolinea.entities.Flota</class>
+    <class>com.aerolinea.entities.Movimiento</class>
+    <class>com.aerolinea.entities.Login</class>
+    <class>com.aerolinea.entities.Tiquete</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Aerolinea?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="lespaul23"/>
+    </properties>
+  </persistence-unit>
+</persistence>

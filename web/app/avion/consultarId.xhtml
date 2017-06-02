@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" template="/WEB-INF/templates/default.xhtml" 
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:o="http://omnifaces.org/ui">
+
+     <ui:define name="content">
+        <div id="wrapper">
+            <section>
+                <h:form id="formMessage">
+                    <p:messages id="msg" globalOnly="true" autoUpdate="true" closable="true"/>
+                </h:form>
+                
+                <h:form id="formPaciente">
+                    <p:panel header="Consultar Avion">
+                        <div class="ui-grid ui-grid-responsive">
+                            <div class="ui-grid-row">
+                                <div class="ui-grid-col-6" align="center">
+                                    <h:panelGrid columns="2" cellpadding="5">
+                                        
+                                        <p:outputLabel for="identificacion" value="Identificacion"/>
+                                        <p:inputText id="identificacion" value="" maxlength="45" required="true"/>
+ 
+                                    </h:panelGrid>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="ui-grid-row">
+                                <div class="ui-grid-col-3" align="center">
+                                    <f:facet name="footer">
+                                        <div class="ui-panel-titlebar ui-widget-header" align="center">
+                                            <p:commandButton value="Consultar"  icon="ui-icon ui-icon-search" title="Buscar avion" update="formPaciente"/>
+                                            <p:commandButton value="Cancelar" icon="ui-icon-refresh" title="Borrar datos" immediate="true" update="formPaciente">
+                                                <p:resetInput target="formPaciente"/>
+                                            </p:commandButton> 
+                                        </div>
+                                    </f:facet>
+                                </div>
+                            </div>
+                        </div>
+                    </p:panel>
+              
+                </h:form>
+            </section>
+        </div>
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,204 @@
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+body, html {
+    padding: 0;
+    margin: 0 auto;
+    background: #fff;
+    line-height: 1.4;
+    font: 1em 'Abel', sans-serif;
+}
+
+* { font-family: 'Abel', sans-serif !important; }
+
+#content, header, footer, #wrapper { clear: both; }
+
+#wrapper,#contrato {
+    margin: 0 auto;
+    padding: 2.5em 0;
+    width: 1024px;
+}
+
+hgroup{
+    margin: 0 auto;
+    padding: 0.6em 0;
+    width: 1024px;
+    height: 95px;
+}
+
+
+#contrato { width: 1024px; }
+
+footer,header{
+    background: #242424;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-top: 1px solid #fff;
+}
+
+section { clear: both; }
+
+#logo {
+    padding-bottom: .5em;
+    float: left;
+}
+
+#nombre {
+    padding-left: 10em;
+    float: left;
+}
+
+#customTextArea{
+    width: 30em;
+    height: 4em;
+}
+
+.logout:hover { 
+    background-position: -32px 0; 
+}
+
+.logout { 
+    background: url(../imagenes/logout.png); 
+    display: block; 
+    width: 32px; 
+    height: 32px; 
+    float: right;
+    margin: 2em;
+}
+
+.copyright {
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+.ui-selectonemenu.ui-widget.ui-state-default.ui-corner-all { 
+    background: #fff; 
+}
+
+/* Inicio */
+.seccion li, .seccion h1, .seccion p { 
+    color: #aaa; 
+}
+
+.seccion h1 { 
+    text-transform: uppercase; 
+}
+
+.seccion {
+    padding: 1em;
+    text-align: center;
+    display: none;
+}
+
+#objetivo ul {
+    padding: 0;
+    list-style: none; 
+}
+
+#objetivo ul li {
+    padding: 1em;
+    width: 30%;
+    display: inline-block;
+    text-align: justify;
+}
+
+#objetivo li { 
+    vertical-align: top !important; 
+}
+
+#visitante ul { 
+    padding: 0; 
+}
+
+#visitante li { 
+    padding: .5em; 
+}
+
+/* Index */
+
+.descripcion {
+    display: block;
+    margin-top : .3em;
+    margin-left: .3em;
+    margin-bottom: .2em;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-top : 2em;
+    margin-right: 10em;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+.infoLabel {
+    font-weight: bold;
+}
+
+.rad {
+    margin-top : 1em;
+    margin-left: .3em;
+    margin-bottom: .2em;
+    font-weight: bold;
+}
+
+.myicon{
+    margin-left: 3.7em;
+    margin-top: 0.3em;
+    height: 2em;
+    width: 2em;
+    background-repeat: no-repeat;
+    background-image: url("../imagenes/search.jpg");
+}
+
+.panel1 {
+    border-width: thin;
+}
+
+.ui-datatable thead th {
+    font-size: 1.3em;
+}
+
+.ui-datatable .ui-datatable-header, 
+.ui-datatable .ui-datatable-footer, .ui-paginator.ui-paginator-bottom, 
+.ui-datatable thead th, .ui-datatable tfoot td, .ui-datatable tfoot th {
+    color: #333;
+    background: #eee;
+    text-transform: uppercase;
+}
+
+.ui-panel-titlebar.ui-widget-header.ui-helper-clearfix.ui-corner-all, legend {
+    border: none;
+    color: #333;
+    background: #eee;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    border-width: 0px 0px 1px;
+    border-style: none none solid;
+    border-color: #E5E5E5;
+    border-color: -moz-use-text-color -moz-use-text-color #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+
+input:disabled { 
+    opacity: .5; 
+}
+
+.ui-panel.ui-widget.ui-widget-content.ui-corner-all { 
+    border: none !important; 
+}
+
+.ui-button.ui-widget.ui-state-default.ui-button-text-only.ui-state-hover, 
+.ui-button.ui-widget.ui-state-default.ui-button-text-only.ui-state-active { 
+    background: #01babe; 
+}
+
+.ui-datalist-content.ui-widget-content {
+    border: none;
+}

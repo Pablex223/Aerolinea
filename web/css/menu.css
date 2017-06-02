@@ -1,0 +1,54 @@
+.menuwrap {
+    width:1366px;
+    text-align:  center;
+    clear:  both;
+}
+
+.ui-menubar {
+    padding: .6em;
+}
+
+.ui-menuitem.ui-widget.ui-corner-all {
+/*    border-right: 1px solid white;*/
+    border-radius: 0;
+    margin-right: 40px;
+}
+
+.ui-menuitem.ui-widget.ui-corner-all:nth-last-child(2), 
+.ui-menuitem.ui-widget.ui-corner-all:last-child {
+    border: none;
+}
+
+ul.ui-widget-content.ui-menu-list.ui-corner-all.ui-helper-clearfix.ui-menu-child.ui-shadow, 
+.ui-menubar {
+    background: orange;
+}
+
+.menu.ui-widget-content a {
+    color: #fff;
+}
+
+
+
+
+.ui-menuitem-icon.ui-icon {
+    margin-right: .5em;
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("/Aerolinea/javax.faces.resource/images/ui-icons_ffffff_256x240.png.xhtml?ln=primefaces-aristo");
+}
+
+.ui-widget-content .ui-icon {
+    background-image: url("/Aerolinea/javax.faces.resource/images/ui-icons_ffffff_256x240.png.xhtml?ln=primefaces-aristo");
+}
+
+.ui-widget-content .ui-icon {
+    background-image: url("/Aerolinea/javax.faces.resource/images/ui-icons_ffffff_256x240.png.xhtml?ln=primefaces-aristo");
+}
+
+.ui-state-default .ui-icon {
+    background-image: url("/Aerolinea/javax.faces.resource/images/ui-icons_38667f_256x240.png.xhtml?ln=primefaces-aristo");
+}
+
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" template="/WEB-INF/templates/default.xhtml" 
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:o="http://omnifaces.org/ui">
+
+    <ui:define name="content">
+        <div id="wrapper" align="center">
+            <section>
+                <p:panel header="Agregar Vuelo" id="panel">
+                    <div class="ui-grid ui-grid-responsive">
+                        <div class="ui-grid-row">
+                            <div class="ui-grid-col-12">
+                                <h:form id="formPaciente">
+                                    <p:messages id="msg" globalOnly="true" closable="true" showDetail="false"/>
+                                    <p:messages for="email" autoUpdate="true" closable="true"/>
+
+                                    <p:panel header="Información" id="panelPersonal">
+                                        <h:panelGrid columns="2">
+                                            <h:panelGrid columns="4">
+
+
+
+                                                <p:outputLabel for="identificacion" value="Identificacion"/>
+                                                <p:inputText id="identificacion" value="" maxlength="45" required="true"/>
+
+                                                <p:outputLabel for="origen" value="Origen"/>
+                                                <p:inputText id="origen" value="" maxlength="45" required="true"/>
+
+                                                <p:outputLabel for="destino" value="Destino"/>
+                                                <p:inputText id="destino" value=""  maxlength="45" required="true"/>
+
+                                                <p:outputLabel for="salida" value="Salida"/>
+                                                <p:calendar id="salida"  required="true" timeZone="GMT-6" pattern="dd/MM/yyyy HH:mm" minHour="6" maxHour="20" stepMinute="30"/>
+
+
+                                                <p:outputLabel for="llegada" value="Llegada"  />
+                                                <p:calendar id="llegada"  required="true" timeZone="GMT-6" pattern="dd/MM/yyyy HH:mm" minHour="6" maxHour="20" stepMinute="30"/>
+
+                                                <p:outputLabel for="regreso" value="Regreso"  />
+                                                <p:calendar id="regreso" required="true" timeZone="GMT-6" pattern="dd/MM/yyyy HH:mm" minHour="6" maxHour="20" stepMinute="30"/>
+
+                                                <p:outputLabel for="pasajeros" value="Pasajeros"/>
+                                                <p:inputText id="pasajeros" value="" maxlength="45"  readonly="true"/>
+
+
+                                                <p:outputLabel  value="Avion"/>
+                                                <p:outputLabel value="Ruta"/>
+
+
+
+
+
+                                            </h:panelGrid>
+                                        </h:panelGrid>
+
+                                        <f:facet name="footer">
+                                            <div class="ui-panel-titlebar ui-widget-header" align="center">
+                                                <p:commandButton value="Agregar"  icon="ui-icon-plus" title="Buscar avion" update="formPaciente"/>
+                                                <p:commandButton value="Cancelar" icon="ui-icon-refresh" title="Borrar datos" immediate="true" update="formPaciente">
+                                                    <p:resetInput target="formPaciente"/>
+                                                </p:commandButton> 
+                                            </div>
+                                        </f:facet>
+                                    </p:panel>
+                                </h:form>
+                            </div>
+                        </div>
+                    </div>
+                </p:panel>
+            </section>
+        </div>
+    </ui:define>
+</ui:composition>

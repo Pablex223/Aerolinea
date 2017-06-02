@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>FindTicket.UNA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--<link rel="shortcut icon" href="#{request.contextPath}/imagenes/icono.png"/>-->
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/default.css"/>
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/css/menu.css"/>
+        <script type="text/javascript" src="#{request.contextPath}/js/default.js"></script>
+        <ui:insert name="head"/>
+    </h:head>
+
+
+    <h:body>
+        <ui:insert name="header">
+            <h:form>
+                <header>
+                    <hgroup>
+                        <a id="logo" title="FindTicket.Una">
+                            <!--<img src="#{request.contextPath}/imagenes/logo.png"/>-->
+                        </a>
+                        <a id="nombre">
+
+                            <H1 style="font-family:Verdana,fantasy;color:orange;">
+                                FindTicket.UNA
+                            </H1>
+                        </a>
+                    </hgroup>
+                </header>
+            </h:form>
+        </ui:insert>
+
+        <ui:insert name="menu">
+            <h:form id="formMenu">
+                <div class="menuwrap">
+                    <p:menubar styleClass="menu">
+                        <p:menuitem value="Inicio" outcome="/app/index" icon="ui-icon-home"/>
+                        <p:menuitem value="Vuelos"  icon="ui-icon-clipboard"/>
+                        <p:menuitem value="Login" url="/app/login/login" icon="ui-icon-person" />
+
+                        <p:submenu label="Historial" icon="ui-icon-clock">
+                            <p:menuitem value="Compra" icon="ui-icon-suitcase" />
+                            <p:menuitem value="Reserva" icon="ui-icon-calendar" />
+                        </p:submenu>
+                        <p:menuitem value="Check-In"  icon="ui-icon-calendar"/>
+
+                        
+                        <p:submenu label="Restructurar" icon="ui-icon-gear">
+                            <p:submenu label="Avion" icon="">
+                                <p:menuitem value="Agregar" url="/app/avion/agregar" icon="ui-icon-plus"/>
+                                <p:menuitem value="Buscar"  url="/app/avion/consultarId"  icon="ui-icon-search"/>
+                            </p:submenu>
+                            <p:submenu label="Ruta" icon="ui-icon-image">
+                                <p:menuitem value="Agregar" url="/app/ruta/agregar"  icon="ui-icon-plus"/>
+                                <p:menuitem value="Buscar"  url="/app/ruta/consultar"  icon="ui-icon-search"/>
+                            </p:submenu>
+                            <p:submenu label="Vuelo" icon="">
+                                <p:menuitem value="Agregar" url="/app/vuelo/agregar" icon="ui-icon-plus"/>
+                                <p:menuitem value="Buscar"  icon="ui-icon-search"/>
+                            </p:submenu>
+                            <p:submenu label="Flota" icon="">
+                                <p:menuitem value="Agregar"  icon="ui-icon-plus"/>
+                                <p:menuitem value="Buscar"   icon="ui-icon-search"/>
+                            </p:submenu>
+                            <p:submenu label="Personal" icon="ui-icon-person">
+                                <p:menuitem value="Agregar"  icon="ui-icon-plus"/>
+                                <p:menuitem value="Buscar"   icon="ui-icon-search"/>
+                            </p:submenu>
+                        </p:submenu>
+
+                        <p:submenu label="Ayuda" icon="ui-icon-help">
+                            <p:menuitem value="Acerca de" url="#" icon="ui-icon-info"/>
+                        </p:submenu>
+
+
+                        <p:submenu label="Usuario" icon="ui-icon-locked">
+                            <p:menuitem value="Modificar" icon="ui-icon-gear"  />
+                            <p:menuitem value="Salir" icon="ui-icon-power"/>
+                        </p:submenu>
+                        
+                        
+                    </p:menubar>
+                </div>
+            </h:form>
+        </ui:insert>
+
+        <ui:insert name="content">
+            <div id="content">
+
+            </div>
+        </ui:insert>
+
+        <ui:insert name="footer">
+            <footer>
+                <div id="wrapper">
+                    <span class="copyright">FindTicket© 2017.  
+                        J.Pablo Solano Vega.</span>
+                </div>
+            </footer>
+        </ui:insert>
+    </h:body>
+</html>
+
